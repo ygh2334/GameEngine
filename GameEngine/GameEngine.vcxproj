@@ -14,6 +14,7 @@
     <ClInclude Include="src\Biscuit\Application.h" />
     <ClInclude Include="src\Biscuit.h" />
     <ClInclude Include="src\Biscuit\Core.h" />
+    <ClInclude Include="src\Biscuit\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Biscuit\Application.cpp" />

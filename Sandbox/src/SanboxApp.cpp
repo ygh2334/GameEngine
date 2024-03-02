@@ -1,6 +1,21 @@
-#include "Biscuit.h"
+#include <Biscuit.h>
 
-void main()
+class Sandbox :public Biscuit::Application
 {
-	Biscuit::Print();
+public:
+	Sandbox()
+	{
+
+	}
+
+	~Sandbox()
+	{
+
+	}
+
+};
+
+Biscuit::Application* Biscuit::CreateApplication()
+{
+	return new Sandbox();
 }

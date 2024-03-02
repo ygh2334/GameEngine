@@ -27,6 +27,9 @@
     <ClInclude Include="src\Biscuit\Application.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\Biscuit\EntryPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Biscuit\Application.cpp">

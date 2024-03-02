@@ -10,6 +10,9 @@ namespace Biscuit {
 		Application();
 		virtual ~Application();
 
-		void run();
+		void Run();
 	};
+
+	//To be defined in CLIENT
+	Application* CreateApplication();
 }
