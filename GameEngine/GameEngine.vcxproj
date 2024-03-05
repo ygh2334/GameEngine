@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Biscuit\Log.h" />
     <ClInclude Include="src\Biscuit\Application.h" />
     <ClInclude Include="src\Biscuit.h" />
     <ClInclude Include="src\Biscuit\Core.h" />
     <ClInclude Include="src\Biscuit\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Biscuit\Log.cpp" />
     <ClCompile Include="src\Biscuit\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -64,6 +66,7 @@
       <PreprocessorDefinitions>BC_BUILD_DLL;BC_PLATFORM_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -78,6 +81,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BC_BUILD_DLL;BC_PLATFORM_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

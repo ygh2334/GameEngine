@@ -30,9 +30,15 @@
     <ClInclude Include="src\Biscuit\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\Biscuit\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Biscuit\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Biscuit\Log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
