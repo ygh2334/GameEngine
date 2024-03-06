@@ -1,13 +1,17 @@
 #pragma once
-
+#include "Log.cpp"
 #ifdef BC_PLATFORM_WINDOWS
 
 extern Biscuit::Application* Biscuit::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	//Biscuit::Log::Init();
 	Biscuit::Log::Init();
+	
+	BC_CORE_WARN("Initialized Log£¡");
+	int a = 5;
+	BC_CLIENT_INFO("Hello! Var = {0}", a);
+
 	printf("Biscuit Engine\n");
 	auto app = Biscuit::CreateApplication();
 	app->Run();

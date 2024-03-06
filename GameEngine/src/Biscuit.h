@@ -3,7 +3,7 @@
 //For use by Biscuit applications
 #include <stdio.h>
 #include "Biscuit/Application.h"
-//#include "Biscuit/Log.h"
+#include "Biscuit/Log.h"
 
 //---Entry Point-----------------------
 #include "Biscuit/EntryPoint.h"
