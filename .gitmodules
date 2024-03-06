@@ -1,6 +1,3 @@
-[submodule "GameEngine/vendor/spdlog"]
-	path = GameEngine/vendor/spdlog
-	url = https://github.com/gabime/spdlog
 [submodule "Biscuit/vendor/spdlog"]
 	path = Biscuit/vendor/spdlog
 	url = https://github.com/gabime/spdlog
