@@ -1,0 +1,36 @@
+#pragma once
+
+#include <memory>
+
+#include "Core.h"
+#include "spdlog/spdlog.h"
+
+namespace Biscuit 
+{
+	class Log
+	{
+	public:
+		static void Init();
+
+		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
+		
+	private:
+		static std::shared_ptr<spdlog::logger> s_CoreLogger; 
+		static std::shared_ptr<spdlog::logger> s_ClientLogger;
+	};
+}
+
+// Core log macros
+#define BC_CORE_TRACE(...)  ::Biscuit::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define BC_CORE_INFO(...)   ::Biscuit::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define BC_CORE_WARN(...)   ::Biscuit::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define BC_CORE_ERROR(...)  ::Biscuit::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define BC_CORE_FATAL(...)  ::Biscuit::Log::GetCoreLogger()->critical(__VA_ARGS__)
+
+// Client log macros
+#define BC_CLIENT_TRACE(...)  ::Biscuit::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define BC_CLIENT_INFO(...)   ::Biscuit::Log::GetClientLogger()->info(__VA_ARGS__)
+#define BC_CLIENT_WARN(...)   ::Biscuit::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define BC_CLIENT_ERROR(...)  ::Biscuit::Log::GetClientLogger()->error(__VA_ARGS__)
+#define BC_CLIENT_FATAL(...)  ::Biscuit::Log::GetClientLogger()->critical(__VA_ARGS__)

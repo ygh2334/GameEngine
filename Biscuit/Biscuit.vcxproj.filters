@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Biscuit">
+      <UniqueIdentifier>{583C8AD9-C41B-0975-CD33-944B39926FD6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Biscuit.h" />
+    <ClInclude Include="src\Biscuit\Application.h">
+      <Filter>Biscuit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Core.h">
+      <Filter>Biscuit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\EntryPoint.h">
+      <Filter>Biscuit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Log.h">
+      <Filter>Biscuit</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Biscuit\Application.cpp">
+      <Filter>Biscuit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Biscuit\Log.cpp">
+      <Filter>Biscuit</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
