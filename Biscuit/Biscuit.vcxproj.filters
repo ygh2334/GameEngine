@@ -4,6 +4,9 @@
     <Filter Include="Biscuit">
       <UniqueIdentifier>{583C8AD9-C41B-0975-CD33-944B39926FD6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Biscuit\Events">
+      <UniqueIdentifier>{3C9545EA-2863-39F0-11F7-A916FD631555}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Biscuit.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Biscuit\EntryPoint.h">
       <Filter>Biscuit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Events\ApplicationEvent.h">
+      <Filter>Biscuit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Events\Event.h">
+      <Filter>Biscuit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Events\KeyEvent.h">
+      <Filter>Biscuit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Biscuit\Events\MouseEvent.h">
+      <Filter>Biscuit\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Biscuit\Log.h">
       <Filter>Biscuit</Filter>

@@ -10,7 +10,7 @@ int main(int argc, char** argv)
 	
 	BC_CORE_WARN("Initialized Log£¡");
 	int a = 5;
-	BC_CLIENT_INFO("Hello! Var = {0}", a);
+	BC_INFO("Hello! Var = {0}", a);
 
 	printf("Biscuit Engine\n");
 	auto app = Biscuit::CreateApplication();
