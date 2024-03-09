@@ -3,7 +3,7 @@
 #include "Event.h"
 
 #include <sstream>
-
+#include <iostream>
 namespace Biscuit {
 
 	class BISCUIT_API WindowResizeEvent : public Event
@@ -19,6 +19,7 @@ namespace Biscuit {
 		{
 			std::stringstream ss;
 			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
+			std::cout << "WindowResizeEvent: " << m_Width << ", " << m_Height;
 			return ss.str();
 		}
 
