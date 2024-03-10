@@ -1,4 +1,6 @@
+#include "bcpch.h"
 #include "Application.h"
+
 #include "Biscuit/Events/ApplicationEvent.h"
 #include "Biscuit/Log.h"
 

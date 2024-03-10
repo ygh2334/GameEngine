@@ -18,6 +18,9 @@ project "Biscuit"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "bcpch.h"
+	pchsource "Biscuit/src/bcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

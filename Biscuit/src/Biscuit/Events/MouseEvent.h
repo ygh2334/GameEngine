@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Biscuit {
 
 	class BISCUIT_API MouseMovedEvent : public Event

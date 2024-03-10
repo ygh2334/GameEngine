@@ -2,9 +2,6 @@
 
 #include "Biscuit/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Biscuit {
 
 	// Events in Biscuit are currently blocking, meaning when an event occurs it
