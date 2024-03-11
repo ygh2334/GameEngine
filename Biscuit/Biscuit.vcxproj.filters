@@ -7,6 +7,12 @@
     <Filter Include="Biscuit\Events">
       <UniqueIdentifier>{3C9545EA-2863-39F0-11F7-A916FD631555}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Biscuit.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Biscuit\Log.h">
       <Filter>Biscuit</Filter>
     </ClInclude>
+    <ClInclude Include="src\Biscuit\Window.h">
+      <Filter>Biscuit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\bcpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Biscuit\Log.cpp">
       <Filter>Biscuit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\bcpch.cpp" />
   </ItemGroup>

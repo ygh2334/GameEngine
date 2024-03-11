@@ -11,8 +11,18 @@ namespace Biscuit
 	public:
 		static void Init();
 
-		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
-		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
+		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() 
+		{ 
+			if (!s_CoreLogger)
+				Init();
+			return s_CoreLogger; 
+		}
+		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() 
+		{ 
+			if (!s_ClientLogger)
+				Init();
+			return s_ClientLogger; 
+		}
 		
 	private:
 		static std::shared_ptr<spdlog::logger> s_CoreLogger; 

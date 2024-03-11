@@ -1,5 +1,5 @@
 #include <Biscuit.h>
-//#include "Biscuit/Log.cpp"
+#include "Biscuit/Log.cpp"
 
 
 class Sandbox :public Biscuit::Application

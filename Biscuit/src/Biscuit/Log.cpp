@@ -9,6 +9,9 @@ namespace Biscuit
 
 	void Log::Init()
 	{
+		if (s_CoreLogger.get() != nullptr)
+			return;
+
 		spdlog::set_pattern("%^[%T] %n: %v%s");
 		s_CoreLogger = spdlog::stdout_color_mt("BISCUIT");
 		s_CoreLogger->set_level(spdlog::level::trace);

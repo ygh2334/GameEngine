@@ -10,4 +10,13 @@
 	#error Biscuit only support Windows!
 #endif
 
-#define BIT(x) (1 << x)							
+#ifdef BC_ENABLE_ASSERTS
+#define BC_ASSERT(x, ...) { if(!(x)) { BC_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#define BC_CORE_ASSERT(x, ...) { if(!(x)) { BC_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+#define BC_ASSERT(x, ...)
+#define BC_CORE_ASSERT(x, ...)
+#endif
+
+#define BIT(x) (1 << x)	
+
