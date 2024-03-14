@@ -1,6 +1,0 @@
-[submodule "Biscuit/vendor/spdlog"]
-	path = Biscuit/vendor/spdlog
-	url = https://github.com/gabime/spdlog
-[submodule "Biscuit/vendor/GLFW"]
-	path = Biscuit/vendor/GLFW
-	url = https://github.com/TheCherno/glfw.git
